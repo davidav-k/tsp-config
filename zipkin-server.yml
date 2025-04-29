@@ -1,0 +1,16 @@
+server:
+  port: 9411
+
+spring:
+  zipkin:
+    storage:
+      type: mem
+  sleuth:
+    sampler:
+      probability: 1.0
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
